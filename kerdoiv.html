@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rendelés</title>
+  <meta name="author" content="Szaszala Kristóf">
+  <meta name="description" content="Ezen az oldalon lehet megrendelni a pizzákat">
+
+  <link rel="stylesheet" href="assets/CSS/navbar.css">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <link rel="stylesheet" href="assets/CSS/responsive.css">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon&logo/icon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="assets/JavaScript/navbar.js"></script>
+  <script src="assets/JavaScript/form.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li class="item"><a href="index.html">Kezdőlap</a></li>
+      <li class="item"><a href="rolunk.html">Rólunk</a></li>
+      <li class="item"><a href="pizzaink.html">Pizzáink</a></li>
+      <li class="item"><a href="kerdoiv.html">Rendelés</a></li>
+      <li class="item"><a href="nyereményjáték.html">Nyereményjáték</a></li>
+      <li class="toggle"><span class="bars"></span></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div id="myForm">
+      <h2>Rendelés</h2>
+
+      <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post" id="myform" novalidate>
+        <p><label for="firstname">Vezetéknév: </label>
+          <input type="text" name="firstname" id="firstname">
+        </p>
+        <p><label for="lastname">Keresztnév: </label>
+          <input type="text" name="lastname" id="lastname">
+        </p>
+        <p><label for="email">Email cím: </label>
+          <input type="text" name="email" id="email">
+        </p>
+        <p><label for="phone">Telefonszám: </label>
+          <input type="tel" name="phone" id="phone">
+        </p>
+        <p><label for="password">Jelszó: </label>
+          <input type="password" name="password" id="password">
+        </p>
+        <p><label for="confirm_password">Jelszó újra: </label>
+          <input type="password" name="confirm_password" id="confirm_password">
+        </p>
+        <p><label for="pizza">Válassza ki, hogy milyen pizzát szeretne:</label>
+          <select name="pizza" id="pizza" multiple>
+            <option value="MARGHERITA">MARGHERITA</option>
+            <option value="AMIRA">AMIRA</option>
+            <option value="MARINARA">MARINARA</option>
+            <option value="PROSCOTTO">PROSCOTTO</option>
+            <option value="SALAMI">SALAMI</option>
+            <option value="TONNO">TONNO</option>
+          </select>
+        </p>
+        <p>
+          <label for="message">Ha van üzenete számunkra, kérjük ide írja:</label>
+          <textarea name="message" id="message" rows="4" cols="50"></textarea>
+        </p>
+        <p>Kérjük fogadja el általános szerződési feltételeinket:</p>
+        <p><label for="elfogad">Elfogad </label>
+          <input type="checkbox" name="elfogad" id="elfogad">
+        </p>
+        <p><input type="submit" value="Elküld"></p>
+      </form>
+
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Nem egy valós étterem weboldala</p>
+    <p>Készítette: Szaszala Kristóf - Budapesti Corvinus Egyetem, 2023</p>
+  </footer>
+</body>

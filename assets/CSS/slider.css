@@ -1,0 +1,36 @@
+.page-header,
+.alcim {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.galleria img {
+  max-width: 100%;
+  height: auto;
+  flex: 0 0 calc(33.33% - 10px);
+}
+
+@media screen and (max-width: 768px) {
+  .galleria img {
+    flex: 0 0 calc(50% - 10px);
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}

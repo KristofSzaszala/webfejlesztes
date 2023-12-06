@@ -1,0 +1,52 @@
+table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;/
+}
+
+.munkatars {
+  flex: 1 1 40%;
+  margin: 10px;
+  text-align: center;
+}
+
+.munkatars img {
+  max-width: 100%;
+  height: auto;
+}
+
+.map {
+  align-items: center;
+  flex: 1 1 40%;
+  margin: 10px;
+  text-align: center;
+}
+
+.map img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pizza {
+  flex: 1 1 40%;
+  margin: 10px;
+  text-align: center;
+}
+
+.pizza img {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}

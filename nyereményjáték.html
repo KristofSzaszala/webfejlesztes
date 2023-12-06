@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzéria</title>
+    <meta name="author" content="Szaszala Kristóf">
+    <meta name="description" content="Ezen az oldalon játszani lehet a bot ellen egy ajándék pizzáért">
+
+    <link rel="stylesheet" href="assets/CSS/navbar.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/nyeremenyjatek.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon&logo/icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/JavaScript/navbar.js"></script>
+    <script src="assets/JavaScript/nyeremenyjatek.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="item"><a href="index.html">Kezdőlap</a></li>
+            <li class="item"><a href="rolunk.html">Rólunk</a></li>
+            <li class="item"><a href="pizzaink.html">Pizzáink</a></li>
+            <li class="item"><a href="kerdoiv.html">Rendelés</a></li>
+            <li class="item"><a href="nyereményjáték.html">Nyereményjáték</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <h1>Játszon botunk ellen kő pappír ollót, ha hamarabb eléri az 5 pontot akkor nyert egy pizzát.</h1>
+    <h2>Bot pontjai:
+        <span id="bot-pontja">0</span>
+    </h2>
+    <h2>Saját pontjaim:
+        <span id="sajat-pontom">0</span>
+    </h2>
+    <div class="lila-kep">
+        <img id="bot-kep" src="assets/img/nyeremenyjatek/paper_purple.png" alt="" height="150" width="150">
+    </div>
+    <br>
+    <div class="jatek-kontener">
+        <img onclick="jatekosValasztas('paper')" src="assets/img/nyeremenyjatek/paper_green.png" alt="" height="150"
+            width="150">
+        <img onclick="jatekosValasztas('scissors')" src="assets/img/nyeremenyjatek/scissors_green.png" alt=""
+            height="150" width="150">
+        <img onclick="jatekosValasztas('rock')" src="assets/img/nyeremenyjatek/rock_green.png" alt="" height="150"
+            width="150">
+    </div><br>
+    <footer class="footer">
+        <p>Nem egy valós étterem weboldala</p>
+        <p>Készítette: Szaszala Kristóf - Budapesti Corvinus Egyetem, 2023</p>
+    </footer>
+</body>
+
+</html>

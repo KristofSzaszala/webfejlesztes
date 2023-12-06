@@ -1,0 +1,49 @@
+/* Képek középre igazítása */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Flexbox a reszponzivitáshoz */
+.jatek-kontener {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Minden kép legyen 150px széles */
+.jatek-kontener img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+/* Lila kép középre igazítása */
+.lila-kep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lila-kep img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Képek elrendezése telefonon */
+@media screen and (max-width: 480px) {
+    .jatek-kontener img {
+        max-width: calc(33.33% - 10px);
+    }
+}
+
+/* Címek középre igazítása */
+h1,
+h2 {
+    text-align: center;
+}
