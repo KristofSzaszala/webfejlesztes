@@ -3,7 +3,7 @@ A webfejlesztés tantárgy beadandója
 
 Készítette: Szaszala Kristóf
 
-URL cím: https://github.com/KristofSzaszala/webfejlesztes
+URL cím: https://kristofszaszala.github.io/webfejlesztes/
 
 Leírás: 
 Az oldalam egy pizzéria weboldala. A weboldalon megtalálható egy rövid történet, a pizzák árai egy rendelési felület és egy nyereményjáték.
